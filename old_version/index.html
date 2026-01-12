@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Схема школы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "container"> 
+        <div class="floor-column">
+            <div class="floor" style="top: 150px; left: 50px;" onclick="showFloor(1)">Этаж 1</div>
+            <div class="floor" style="bottom: 100px; left: 50px;" onclick="showFloor(2)">Этаж 2</div>
+            <div class="floor" style="top: 50px; left: 50px;" onclick="showFloor(3)">Этаж 3</div>
+            
+        </div>
+        <button class="social-button" onclick="window.open('http:/lstu2.ucoz.ru', '_blank')"></button>
+        <button class="vk" onclick="window.open('https:/vk.com/lstu2_penza', '_blank');"></button>
+        <div class="floor-rooms-container">
+            <div id="floor1" class="floor-rooms hidden" style="background-image: url('floorf.png')" >
+                <button id="TC" class="room" style="top: 5%; left: 30%;" data-info="Технический центр" data-image="Тех.jpg">Тех. центр</button>
+                <button id="LNF" class="room" style="top: 25px; left: 600px;" data-info="Лестница" data-image="ЛВ.jpg">Л</button>
+                <button id="LIB" class="room" style="top: 580px; left: 190px;" data-info="Библиотека" data-image="Библиотека.jpg">Библ</button>
+                <button id="MED" class="room" style="top: 580px; left: 280px;" data-info="Медицинский пункт" data-image="Мед пункт.jpg">Мед</button>
+                <button id="CAB5" class="room" style="top: 705px; left: 190px;" data-info="Кабинет истории"data-image="5.jpg">5</button>
+                <button id="CAB6" class="room" style="top: 705px; left: 280px;" data-info="Кабинет математики"data-image="6.jpg">6</button>
+                <button id="FOYE" class="room" style="top: 705px; left: 380px;" data-info="Фойе"data-image="фое.jpg">Ф</button>
+                <button id="SP1F" class="room" style="top: 585px; left: 380px;" data-info="Служебное помещение">СП</button>
+                <button id="COR1F" class="room" style="top: 645px; left: 380px;" data-info="Коридор"data-image="кор1.jpg">К</button>
+                <button id="GAR" class="room" style="top: 705px; left: 620px;" data-info="Гардероб"data-image="г.jpg">Г</button>
+                <button id="CAB7" class="room" style="top: 580px; left: 500px;" data-info="Кабинет английского языка"data-image="7.jpg">7</button>
+                <button id="CAB9" class="room" style="top: 400px; left: 710px;" data-info="Кабинет русского языка"data-image="9.jpg">9</button>
+                <button id="CAB10" class="room" style="top: 320px; left: 710px;" data-info="Кабинет физики"data-image="10.jpg">10</button>
+                <button id="CAB11" class="room" style="top: 240px; left: 710px;" data-info="Кабинет математики"data-image="11.jpg">11</button>
+                <button id="COR2F" class="room" style="top: 240px; left: 610px;" data-info="Коридор"data-image="коридор1.jpg">К</button>
+                <button id="STOL" class="room" style="top: 16%; left: 708px;" data-info="Столовая"data-image="Столовая.jpg">С</button>
+                <button id="LEF" class="room" style="top: 635px; left: 710px;" data-info="Лестница"data-image="ЛП.jpg">Л</button>
+                <button id="LWF" class="room" style="top: 640px; left: 110px;" data-info="Лестница"data-image="ЛЛ.jpg">Л</button>
+                <button id="TMF" class="room" style="top: 560px; left: 710px;" data-info="Мужской туалет">М</button>
+                <button id="TGF" class="room" style="top: 487px; left: 710px;" data-info="Женский туалет">Ж</button>
+                <button id="EXF" class="room" style="top: 180px; left: 320px;" data-info="Эвакуационный выход">В</button>
+                <button class="show-all-paths-button" style="display: none; position: absolute; top: 400px; left: 200px; z-index: 10;">Все пути к выходам</button>
+                <svg class="evacuation-svg" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:4; pointer-events:none;"></svg>
+
+                <div class="path-node" data-id="TN" style="top: 70px; left: 270px;"></div>
+                <div class="path-node" data-id="T" style="top: 130px; left: 270px;"></div>
+                <div class="path-node" data-id="TP" style="top: 130px; left: 350px;"></div>
+                <div class="path-node" data-id="TV" style="top: 180px; left: 350px;"></div>
+                <div class="path-node" data-id="S" style="top: 130px; left: 645px;"></div>
+                <div class="path-node" data-id="SN" style="top: 130px; left: 685px;"></div>
+                <div class="path-node" data-id="L" style="top: 70px; left: 645px;"></div>
+                <div class="path-node" data-id="K11" style="top: 250px; left: 645px;"></div>
+                <div class="path-node" data-id="K11N" style="top: 250px; left: 685px;"></div>
+                <div class="path-node" data-id="K10" style="top: 330px; left: 645px;"></div>
+                <div class="path-node" data-id="K10N" style="top: 330px; left: 685px;"></div>
+                <div class="path-node" data-id="K9" style="top: 410px; left: 645px;"></div>
+                <div class="path-node" data-id="K9N" style="top: 410px; left: 685px;"></div>
+                <div class="path-node" data-id="TD" style="top: 487px; left: 645px;"></div>
+                <div class="path-node" data-id="TDN" style="top: 487px; left: 685px;"></div>
+                <div class="path-node" data-id="TM" style="top: 560px; left: 645px;"></div>
+                <div class="path-node" data-id="TMN" style="top: 560px; left: 685px;"></div>
+                <div class="path-node" data-id="L2" style="top: 650px; left: 645px;"></div>
+                <div class="path-node" data-id="L2N" style="top: 650px; left: 685px;"></div>
+                <div class="path-node" data-id="G" style="top: 680px; left: 645px;"></div>
+                <div class="path-node" data-id="GN" style="top: 720px; left: 645px;"></div>
+                <div class="path-node" data-id="G2" style="top: 720px; left: 575px;"></div>
+                <div class="path-node" data-id="K7N" style="top: 620px; left: 530px;"></div>
+                <div class="path-node" data-id="K7" style="top: 650px; left: 530px;"></div>
+                <div class="path-node" data-id="SPN" style="top: 620px; left: 410px;"></div>
+                <div class="path-node" data-id="SP" style="top: 650px; left: 410px;"></div>
+                <div class="path-node" data-id="F" style="top: 720px; left: 410px;"></div>
+                <div class="path-node" data-id="F2" style="top: 720px; left: 410px;"></div>
+                <div class="path-node" data-id="MN" style="top: 620px; left: 310px;"></div>
+                <div class="path-node" data-id="M" style="top: 650px; left: 310px;"></div>
+                <div class="path-node" data-id="K6N" style="top: 690px; left: 310px;"></div>
+                <div class="path-node" data-id="LIB" style="top: 620px; left: 220px;"></div>
+                <div class="path-node" data-id="L3" style="top: 650px; left: 220px;"></div>
+                <div class="path-node" data-id="K5N" style="top: 690px; left: 220px;"></div>
+                <div class="path-node" data-id="L3N" style="top: 650px; left: 180px;"></div>
+            </div>
+            <div id="floor2" class="floor-rooms hidden" style="background-image: url('floors.png')" >
+                <button id="FZKS" class="room" style="top: 115px; left: 500px;" data-info="Зал для занятий физической культуры" data-image="Фзк зал.jpg">ФЗК</button>
+                <button class="room" id="fzk" style="top: 105px; left: 65px;" data-info="Эвакуационный выход" >В</button>
+                <button id="LNS" class="room" style="top: 25px; left: 610px;" data-info="Лестница"data-image="ЛВ.jpg">Л</button>
+                <button id="CAB19" class="room" style="top: 585px; left: 190px;" data-info="Кабинет физики"data-image="19.jpg">19</button>
+                <button id="CAB21A" class="room" style="top: 585px; left: 280px;" data-info="Кабинет заместителя директора по учебно-воспитательной работе"data-image="21а.jpg">21а</button>
+                <button id="CAB21B" class="room" style="top: 585px; left: 370px;" data-info="Кабинет заместителя директора по научной работе"data-image="21б.jpg">21б</button>
+                <button id="UCH" class="room" style="top: 585px; left: 450px;" data-info="Учительская"data-image="20у.jpg">Уч.</button>
+                <button id="CAB17" class="room" style="top: 705px; left: 190px;" data-info="Кабинет информатики"data-image="17.jpg">17</button>
+                <button id="CAB18" class="room" style="top: 705px; left: 280px;" data-info="Кабинет биологии"data-image="18.jpg">18</button>
+                <button id="LAB" class="room" style="top: 705px; left: 385px;" data-info="Лаборантская"data-image="Лаборанская.jpg">Лаб.</button>
+                <button id="COR1S" class="room" style="top: 645px; left: 385px;" data-info="Коридор"data-image="Коридор2л.jpg">К</button>
+                <button id="CAB22" class="room" style="top: 705px; left: 480px;" data-info="Кабинет английского языка"data-image="22.jpg">22</button>
+                <button id="CAB23" class="room" style="top: 705px; left: 620px;" data-info="Кабинет истории"data-image="История.jpg">23</button>
+                <button id = "CAB20" class="room dop" style="top: 585px; left: 530px;" data-info="Кабинет английского языка"data-image="20.jpg">20</button>
+                <button id = "CAB24" class="room" style="top: 420px; left: 710px;" data-info="Кабинет общего профиля"data-image="24.jpg">24</button>
+                <button id = "CAB25" class="room" style="top: 370px; left: 710px;" data-info="Кабинет английского языка"data-image="25.jpg">25</button>
+                <button id = "CAB26" class="room" style="top: 310px; left: 710px;" data-info="Кабинет информатики"data-image="26.jpg">26</button>
+                <button id = "CAB27" class="room" style="top: 255px; left: 710px;" data-info="Кабинет ИЗО"data-image="27.jpg">27</button>
+                <button id = "COR2S" class="room" style="top: 255px; left: 610px;" data-info="Коридор"data-image="Коридор2.jpg">К</button>
+                <button id = "CAB28" class="room" style="top: 180px; left: 710px;" data-info="Кабинет русского языка"data-image="28.jpg">28</button>
+                <button id = "RAZ" class="room" style="top: 90px; left: 710px;" data-info="Раздевалка">Р</button>
+                <button id = "TMS" class="room" style="top: 560px; left: 710px;" data-info="Мужской туалет">М</button>
+                <button id = "TGS" class="room" style="top: 487px; left: 710px;" data-info="Женский туалет">Ж</button>
+                <button id = "LES" class="room" style="top: 635px; left: 710px;" data-info="Лестница"data-image="ЛП.jpg">Л</button>
+                <button id = "LWS" class="room" style="top: 640px; left: 110px;" data-info="Лестница"data-image="ЛЛ.jpg">Л</button>
+
+                <button class="show-all-paths-button" style="display: none; position: absolute; top: 400px; left: 200px; z-index: 10;">Все пути к выходам</button>
+
+                <svg class="evacuation-svg" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:4; pointer-events:none;"></svg>
+                <div class="path-node" data-id="L" style="top: 70px; left: 645px;"></div>
+                <div class="path-node" data-id="LR" style="top: 120px; left: 645px;"></div>
+                <div class="path-node" data-id="R" style="top: 120px; left: 695px;"></div>
+                <div class="path-node" data-id="FT" style="top: 120px; left: 575px;"></div>
+                <div class="path-node" data-id="FTV" style="top: 120px; left: 85px;"></div>
+                <div class="path-node" data-id="K28" style="top: 190px; left: 645px;"></div>
+                <div class="path-node" data-id="K28N" style="top: 190px; left: 695px;"></div>
+                <div class="path-node" data-id="K27" style="top: 265px; left: 645px;"></div>
+                <div class="path-node" data-id="K27N" style="top: 265px; left: 695px;"></div>
+                <div class="path-node" data-id="K26" style="top: 320px; left: 645px;"></div>
+                <div class="path-node" data-id="K26N" style="top: 320px; left: 695px;"></div>
+                <div class="path-node" data-id="K25" style="top: 380px; left: 645px;"></div>
+                <div class="path-node" data-id="K25N" style="top: 380px; left: 695px;"></div>
+                <div class="path-node" data-id="K24" style="top: 430px; left: 645px;"></div>
+                <div class="path-node" data-id="K24N" style="top: 430px; left: 695px;"></div>
+                <div class="path-node" data-id="TD" style="top: 497px; left: 645px;"></div>
+                <div class="path-node" data-id="TDN" style="top: 497px; left: 695px;"></div>
+                <div class="path-node" data-id="TM" style="top: 570px; left: 645px;"></div>
+                <div class="path-node" data-id="TMN" style="top: 570px; left: 695px;"></div>
+                <div class="path-node" data-id="L2" style="top: 645px; left: 645px;"></div>
+                <div class="path-node" data-id="L2N" style="top: 645px; left: 695px;"></div>
+                <div class="path-node" data-id="K23" style="top: 695px; left: 645px;"></div>
+                <div class="path-node" data-id="K20" style="top: 600px; left: 515px;"></div>
+                <div class="path-node" data-id="UC" style="top: 600px; left: 480px;"></div>
+                <div class="path-node" data-id="U" style="top: 645px; left: 480px;"></div>
+                <div class="path-node" data-id="K22" style="top: 690px; left: 480px;"></div>
+                <div class="path-node" data-id="K21B" style="top: 620px; left: 410px;"></div>
+                <div class="path-node" data-id="LB" style="top: 645px; left: 410px;"></div>
+                <div class="path-node" data-id="LAB" style="top: 690px; left: 410px;"></div>
+                <div class="path-node" data-id="K21A" style="top: 620px; left: 310px;"></div>
+                <div class="path-node" data-id="K21" style="top: 645px; left: 310px;"></div>
+                <div class="path-node" data-id="K18" style="top: 690px; left: 310px;"></div>
+                <div class="path-node" data-id="K19" style="top: 620px; left: 220px;"></div>
+                <div class="path-node" data-id="L3" style="top: 645px; left: 220px;"></div>
+                <div class="path-node" data-id="K17" style="top: 690px; left: 220px;"></div>
+                <div class="path-node" data-id="L3N" style="top: 645px; left: 180px;"></div>
+            </div>
+            <div id="floor3" class="floor-rooms hidden" style="background-image: url('floort.png')" >
+                <button id = "LNT" class="room" style="top: 25px; left: 610px;" data-info="Лестница"data-image="ЛВ.jpg">Л</button>
+                <button id = "CAB35" class="room" style="top: 580px; left: 190px;" data-info="Кабинет химии"data-image="35.jpg">35</button>
+                <button id = "CAB33" class="room" style="top: 705px; left: 190px;" data-info="Кабинет ОБЖ" data-image="33 обж.jpg">33</button>
+                <button id = "CAB38" class="room dop" style="top: 585px; left: 525px;" data-info="Кабинет английского языка"data-image="38 англ.jpg">38</button>
+                <button id = "CAB36" class="room" style="top: 705px; left: 620px;" data-info="Кабинет информатики"data-image="36 инфа.jpg">36</button>
+                <button id = "ACT" class="room" style="top: 650px; left: 515px;" data-info="Актовый зал"data-image="Актовый.jpg">А</button>
+                <button id = "CAB40" class="room" style="top: 395px; left: 710px;" data-info="Кабинет математики"data-image="40н.jpg">40</button>
+                <button id = "CAB39" class="room" style="top: 470px; left: 710px;" data-info="Кабинет математики"data-image="39н.jpg">39</button>
+                <button id = "CAB41" class="room" style="top: 320px; left: 710px;" data-info="Кабинет русского языка"data-image="41н.jpg">41</button>
+                <button id = "CAB42" class="room" style="top: 240px; left: 710px;" data-info="Кабинет русского языка"data-image="42н.jpg">42</button>
+                <button id = "CORT" class="room" style="top: 240px; left: 610px;" data-info="Коридор"data-image="Коридор3.jpg">К</button>
+                <button id="invisible-creator-button" class="invisible" style="top: 10px; left: 80px;">?</button>
+                <div id="creator-info" class="creator-info hidden">Коваленко Иван Сергеевич 2025 год, 10 'Б'</div>
+                <button id = "CAB43" class="room" style="top: 180px; left: 710px;" data-info="Кабинет географии"data-image="43н.jpg">43</button>
+                <button id = "CAB44" class="room" style="top: 80px; left: 710px;" data-info="Кабинет истории"data-image="44н.jpg">44</button>
+                <button id = "LET" class="room" style="top: 635px; left: 710px;" data-info="Лестница"data-image="ЛП.jpg">Л</button>
+                <button id = "SP1T" class="room" style="top: 525px; left: 710px;" data-info="Служебное помещение"data-image="сп3.1.jpg">СП</button>
+                <button id = "SP2T" class="room" style="top: 565px; left: 710px;" data-info="Служебное помещение"data-image="Сп3.jpg">СП</button>
+                <button id = "LWT" class="room" style="top: 640px; left: 110px;" data-info="Лестница"data-image="ЛЛ.jpg">Л</button>
+
+                <button class="show-all-paths-button" style="display: none; position: absolute; top: 400px; left: 200px; z-index: 10;">Все пути к выходам</button>
+
+                <svg class="evacuation-svg" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:4; pointer-events:none;"></svg>
+                <div class="path-node" data-id="L" style="top: 70px; left: 645px;"></div>
+                <div class="path-node" data-id="K44" style="top: 90px; left: 645px;"></div>
+                <div class="path-node" data-id="K44N" style="top: 90px; left: 695px;"></div>
+                <div class="path-node" data-id="K43" style="top: 190px; left: 645px;"></div>
+                <div class="path-node" data-id="K43N" style="top: 190px; left: 695px;"></div>
+                <div class="path-node" data-id="K42" style="top: 260px; left: 645px;"></div>
+                <div class="path-node" data-id="K42N" style="top: 260px; left: 695px;"></div>
+                <div class="path-node" data-id="K41" style="top: 335px; left: 645px;"></div>
+                <div class="path-node" data-id="K41N" style="top: 335px; left: 695px;"></div>
+                <div class="path-node" data-id="K40" style="top: 405px; left: 645px;"></div>
+                <div class="path-node" data-id="K40N" style="top: 405px; left: 695px;"></div>
+                <div class="path-node" data-id="K39" style="top: 485px; left: 645px;"></div>
+                <div class="path-node" data-id="K39N" style="top: 485px; left: 695px;"></div>
+                <div class="path-node" data-id="SP1" style="top: 530px; left: 645px;"></div>
+                <div class="path-node" data-id="SP1N" style="top: 530px; left: 695px;"></div>
+                <div class="path-node" data-id="SP2" style="top: 590px; left: 645px;"></div>
+                <div class="path-node" data-id="SP2N" style="top: 590px; left: 695px;"></div>
+                <div class="path-node" data-id="K38" style="top: 590px; left: 575px;"></div>
+                <div class="path-node" data-id="L2" style="top: 650px; left: 645px;"></div>
+                <div class="path-node" data-id="L2N" style="top: 650px; left: 695px;"></div>
+                <div class="path-node" data-id="ACT" style="top: 650px; left: 575px;"></div>
+                <div class="path-node" data-id="K36" style="top: 690px; left: 645px;"></div>
+                <div class="path-node" data-id="L3" style="top: 650px; left: 220px;"></div>
+                <div class="path-node" data-id="K35" style="top: 620px; left: 220px;"></div>
+                <div class="path-node" data-id="K33" style="top: 690px; left: 220px;"></div>
+                <div class="path-node" data-id="L3N" style="top: 650px; left: 180px;"></div>
+            </div>
+        </div>
+        <div id="info-popup" class="popup hidden">
+            <div class="popup-content">
+                <p id="popup-text"></p>
+                <img id="popup-image" src="" alt="Фото кабинета" class="hidden">
+                <div class="popup-buttons">
+                    <button onclick="closePopup()">Закрыть</button>
+                    <button id="im-here-button">Я здесь</button>
+                </div>
+            </div>
+        </div>
+        <button id="evacuate-button" title="Эвакуация">🚪</button>
+        <button id="search-button">🔍</button>
+        <div id="search-container" class="hidden">
+            <input type="text" id="search-input" placeholder="Введите номер или название..." />
+            <ul id="search-results"></ul>
+        </div>
+        <div id="info-popup-global" class="info-popup hidden">
+            <div class="info-popup-content">
+                <p id="info-text"></p>
+                <div class="info-popup-buttons" id="route-controls">
+                    <button id="route-finish">Завершить</button>
+                    <button id="route-next">Далее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
