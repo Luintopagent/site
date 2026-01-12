@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Схема школы</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-config="building.json">
+  <div class="container">
+    <div class="floor-column" id="floor-buttons"></div>
+
+    <button class="social-button" onclick="window.open('http:/lstu2.ucoz.ru', '_blank')"></button>
+    <button class="vk" onclick="window.open('https:/vk.com/lstu2_penza', '_blank');"></button>
+
+    <div class="floor-rooms-container" id="floors-container"></div>
+
+    <div id="info-popup" class="popup hidden">
+      <div class="popup-content">
+        <p id="popup-text"></p>
+        <img id="popup-image" src="" alt="Фото кабинета" class="hidden" />
+        <div class="popup-buttons">
+          <button onclick="closePopup()">Закрыть</button>
+          <button id="im-here-button">Я здесь</button>
+        </div>
+      </div>
+    </div>
+
+    <button id="search-button">🔍</button>
+    <button id="evacuate-button" title="Эвакуация">🚪</button>
+
+    <div id="search-container" class="hidden">
+      <input id="search-input" type="text" placeholder="Введите номер или название..." />
+      <ul id="search-results"></ul>
+    </div>
+
+    <div id="info-popup-global" class="info-popup hidden">
+      <div class="info-popup-content">
+        <p id="info-text"></p>
+        <div class="info-popup-buttons" id="route-controls">
+          <button id="route-finish">Завершить</button>
+          <button id="route-next">Далее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script_json.js"></script>
+</body>
+</html>

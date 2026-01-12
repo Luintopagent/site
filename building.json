@@ -1,0 +1,1963 @@
+{
+  "schemaVersion": 1,
+  "title": "Схема школы",
+  "assets": {
+    "basePath": ""
+  },
+  "floors": [
+    {
+      "index": 0,
+      "id": "floor1",
+      "label": "Этаж 1",
+      "floorButtonStyle": {
+        "top": "150px",
+        "left": "50px"
+      },
+      "backgroundImage": "floorf.png",
+      "rooms": [
+        {
+          "id": "TC",
+          "label": "Тех. центр",
+          "info": "Технический центр",
+          "image": "Тех.jpg",
+          "style": {
+            "top": "5%",
+            "left": "30%"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "LNF",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛВ.jpg",
+          "style": {
+            "top": "25px",
+            "left": "600px"
+          },
+          "classes": [],
+          "kind": "stair"
+        },
+        {
+          "id": "LIB",
+          "label": "Библ",
+          "info": "Библиотека",
+          "image": "Библиотека.jpg",
+          "style": {
+            "top": "580px",
+            "left": "190px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "MED",
+          "label": "Мед",
+          "info": "Медицинский пункт",
+          "image": "Мед пункт.jpg",
+          "style": {
+            "top": "580px",
+            "left": "280px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB5",
+          "label": "5",
+          "info": "Кабинет истории",
+          "image": "5.jpg",
+          "style": {
+            "top": "705px",
+            "left": "190px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB6",
+          "label": "6",
+          "info": "Кабинет математики",
+          "image": "6.jpg",
+          "style": {
+            "top": "705px",
+            "left": "280px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "FOYE",
+          "label": "Ф",
+          "info": "Фойе",
+          "image": "фое.jpg",
+          "style": {
+            "top": "705px",
+            "left": "380px"
+          },
+          "classes": [],
+          "kind": "foyer"
+        },
+        {
+          "id": "SP1F",
+          "label": "СП",
+          "info": "Служебное помещение",
+          "image": null,
+          "style": {
+            "top": "585px",
+            "left": "380px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "COR1F",
+          "label": "К",
+          "info": "Коридор",
+          "image": "кор1.jpg",
+          "style": {
+            "top": "645px",
+            "left": "380px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "GAR",
+          "label": "Г",
+          "info": "Гардероб",
+          "image": "г.jpg",
+          "style": {
+            "top": "705px",
+            "left": "620px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB7",
+          "label": "7",
+          "info": "Кабинет английского языка",
+          "image": "7.jpg",
+          "style": {
+            "top": "580px",
+            "left": "500px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB9",
+          "label": "9",
+          "info": "Кабинет русского языка",
+          "image": "9.jpg",
+          "style": {
+            "top": "400px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB10",
+          "label": "10",
+          "info": "Кабинет физики",
+          "image": "10.jpg",
+          "style": {
+            "top": "320px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB11",
+          "label": "11",
+          "info": "Кабинет математики",
+          "image": "11.jpg",
+          "style": {
+            "top": "240px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "COR2F",
+          "label": "К",
+          "info": "Коридор",
+          "image": "коридор1.jpg",
+          "style": {
+            "top": "240px",
+            "left": "610px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "STOL",
+          "label": "С",
+          "info": "Столовая",
+          "image": "Столовая.jpg",
+          "style": {
+            "top": "16%",
+            "left": "708px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "LEF",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛП.jpg",
+          "style": {
+            "top": "635px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "stair"
+        },
+        {
+          "id": "LWF",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛЛ.jpg",
+          "style": {
+            "top": "640px",
+            "left": "110px"
+          },
+          "classes": [],
+          "kind": "stair"
+        },
+        {
+          "id": "TMF",
+          "label": "М",
+          "info": "Мужской туалет",
+          "image": null,
+          "style": {
+            "top": "560px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "TGF",
+          "label": "Ж",
+          "info": "Женский туалет",
+          "image": null,
+          "style": {
+            "top": "487px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "EXF",
+          "label": "В",
+          "info": "Эвакуационный выход",
+          "image": null,
+          "style": {
+            "top": "180px",
+            "left": "320px"
+          },
+          "classes": [],
+          "kind": "exit"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "TN",
+          "style": {
+            "top": "70px",
+            "left": "270px"
+          }
+        },
+        {
+          "id": "T",
+          "style": {
+            "top": "130px",
+            "left": "270px"
+          }
+        },
+        {
+          "id": "TP",
+          "style": {
+            "top": "130px",
+            "left": "350px"
+          }
+        },
+        {
+          "id": "TV",
+          "style": {
+            "top": "180px",
+            "left": "350px"
+          }
+        },
+        {
+          "id": "S",
+          "style": {
+            "top": "130px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "SN",
+          "style": {
+            "top": "130px",
+            "left": "685px"
+          }
+        },
+        {
+          "id": "L",
+          "style": {
+            "top": "70px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K11",
+          "style": {
+            "top": "250px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K11N",
+          "style": {
+            "top": "250px",
+            "left": "685px"
+          }
+        },
+        {
+          "id": "K10",
+          "style": {
+            "top": "330px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K10N",
+          "style": {
+            "top": "330px",
+            "left": "685px"
+          }
+        },
+        {
+          "id": "K9",
+          "style": {
+            "top": "410px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K9N",
+          "style": {
+            "top": "410px",
+            "left": "685px"
+          }
+        },
+        {
+          "id": "TD",
+          "style": {
+            "top": "487px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "TDN",
+          "style": {
+            "top": "487px",
+            "left": "685px"
+          }
+        },
+        {
+          "id": "TM",
+          "style": {
+            "top": "560px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "TMN",
+          "style": {
+            "top": "560px",
+            "left": "685px"
+          }
+        },
+        {
+          "id": "L2",
+          "style": {
+            "top": "650px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "L2N",
+          "style": {
+            "top": "650px",
+            "left": "685px"
+          }
+        },
+        {
+          "id": "G",
+          "style": {
+            "top": "680px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "GN",
+          "style": {
+            "top": "720px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "G2",
+          "style": {
+            "top": "720px",
+            "left": "575px"
+          }
+        },
+        {
+          "id": "K7N",
+          "style": {
+            "top": "620px",
+            "left": "530px"
+          }
+        },
+        {
+          "id": "K7",
+          "style": {
+            "top": "650px",
+            "left": "530px"
+          }
+        },
+        {
+          "id": "SPN",
+          "style": {
+            "top": "620px",
+            "left": "410px"
+          }
+        },
+        {
+          "id": "SP",
+          "style": {
+            "top": "650px",
+            "left": "410px"
+          }
+        },
+        {
+          "id": "F",
+          "style": {
+            "top": "720px",
+            "left": "410px"
+          }
+        },
+        {
+          "id": "F2",
+          "style": {
+            "top": "720px",
+            "left": "410px"
+          }
+        },
+        {
+          "id": "MN",
+          "style": {
+            "top": "620px",
+            "left": "310px"
+          }
+        },
+        {
+          "id": "M",
+          "style": {
+            "top": "650px",
+            "left": "310px"
+          }
+        },
+        {
+          "id": "K6N",
+          "style": {
+            "top": "690px",
+            "left": "310px"
+          }
+        },
+        {
+          "id": "LIB",
+          "style": {
+            "top": "620px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "L3",
+          "style": {
+            "top": "650px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "K5N",
+          "style": {
+            "top": "690px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "L3N",
+          "style": {
+            "top": "650px",
+            "left": "180px"
+          }
+        }
+      ],
+      "graph": {
+        "TN": [
+          "T"
+        ],
+        "T": [
+          "TN",
+          "TP"
+        ],
+        "TP": [
+          "T",
+          "TV",
+          "S"
+        ],
+        "TV": [
+          "TP"
+        ],
+        "S": [
+          "TP",
+          "L",
+          "SN",
+          "K11"
+        ],
+        "L": [
+          "S"
+        ],
+        "SN": [
+          "S"
+        ],
+        "K11": [
+          "S",
+          "K11N",
+          "K10"
+        ],
+        "K11N": [
+          "K11"
+        ],
+        "K10": [
+          "K11",
+          "K9",
+          "K10N"
+        ],
+        "K10N": [
+          "K10"
+        ],
+        "K9": [
+          "K9N",
+          "TD",
+          "K10"
+        ],
+        "K9N": [
+          "K9"
+        ],
+        "TD": [
+          "K9",
+          "TDN",
+          "TM"
+        ],
+        "TDN": [
+          "TD"
+        ],
+        "TM": [
+          "L2",
+          "TMN",
+          "TD"
+        ],
+        "TMN": [
+          "TM"
+        ],
+        "L2": [
+          "L2N",
+          "TM",
+          "K7",
+          "G"
+        ],
+        "L2N": [
+          "L2"
+        ],
+        "K7": [
+          "L2",
+          "K7N",
+          "SP"
+        ],
+        "K7N": [
+          "K7"
+        ],
+        "G": [
+          "L2",
+          "GN"
+        ],
+        "GN": [
+          "G",
+          "G2"
+        ],
+        "G2": [
+          "F2",
+          "GN"
+        ],
+        "SP": [
+          "SPN",
+          "F",
+          "K7",
+          "M"
+        ],
+        "SPN": [
+          "SP"
+        ],
+        "F": [
+          "SP"
+        ],
+        "F2": [
+          "G2"
+        ],
+        "MN": [
+          "M"
+        ],
+        "M": [
+          "MN",
+          "SP",
+          "L3",
+          "K6N"
+        ],
+        "K6N": [
+          "M"
+        ],
+        "LIB": [
+          "L3"
+        ],
+        "L3": [
+          "L3N",
+          "LIB",
+          "K5N",
+          "M"
+        ],
+        "K5N": [
+          "L3"
+        ],
+        "L3N": [
+          "L3"
+        ]
+      },
+      "exitNodes": [
+        "L",
+        "L2N",
+        "F",
+        "F2",
+        "L3N",
+        "TV"
+      ],
+      "showAllPathsButtonStyle": {
+        "display": "none",
+        "position": "absolute",
+        "top": "400px",
+        "left": "200px",
+        "z-index": "10"
+      }
+    },
+    {
+      "index": 1,
+      "id": "floor2",
+      "label": "Этаж 2",
+      "floorButtonStyle": {
+        "bottom": "100px",
+        "left": "50px"
+      },
+      "backgroundImage": "floors.png",
+      "rooms": [
+        {
+          "id": "FZKS",
+          "label": "ФЗК",
+          "info": "Зал для занятий физической культуры",
+          "image": "Фзк зал.jpg",
+          "style": {
+            "top": "115px",
+            "left": "500px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "fzk",
+          "label": "В",
+          "info": "Эвакуационный выход",
+          "image": null,
+          "style": {
+            "top": "105px",
+            "left": "65px"
+          },
+          "classes": [],
+          "kind": "exit"
+        },
+        {
+          "id": "LNS",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛВ.jpg",
+          "style": {
+            "top": "25px",
+            "left": "610px"
+          },
+          "classes": [],
+          "kind": "stair"
+        },
+        {
+          "id": "CAB19",
+          "label": "19",
+          "info": "Кабинет физики",
+          "image": "19.jpg",
+          "style": {
+            "top": "585px",
+            "left": "190px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB21A",
+          "label": "21а",
+          "info": "Кабинет заместителя директора по учебно-воспитательной работе",
+          "image": "21а.jpg",
+          "style": {
+            "top": "585px",
+            "left": "280px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB21B",
+          "label": "21б",
+          "info": "Кабинет заместителя директора по научной работе",
+          "image": "21б.jpg",
+          "style": {
+            "top": "585px",
+            "left": "370px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "UCH",
+          "label": "Уч.",
+          "info": "Учительская",
+          "image": "20у.jpg",
+          "style": {
+            "top": "585px",
+            "left": "450px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB17",
+          "label": "17",
+          "info": "Кабинет информатики",
+          "image": "17.jpg",
+          "style": {
+            "top": "705px",
+            "left": "190px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB18",
+          "label": "18",
+          "info": "Кабинет биологии",
+          "image": "18.jpg",
+          "style": {
+            "top": "705px",
+            "left": "280px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "LAB",
+          "label": "Лаб.",
+          "info": "Лаборантская",
+          "image": "Лаборанская.jpg",
+          "style": {
+            "top": "705px",
+            "left": "385px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "COR1S",
+          "label": "К",
+          "info": "Коридор",
+          "image": "Коридор2л.jpg",
+          "style": {
+            "top": "645px",
+            "left": "385px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB22",
+          "label": "22",
+          "info": "Кабинет английского языка",
+          "image": "22.jpg",
+          "style": {
+            "top": "705px",
+            "left": "480px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB23",
+          "label": "23",
+          "info": "Кабинет истории",
+          "image": "История.jpg",
+          "style": {
+            "top": "705px",
+            "left": "620px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB20",
+          "label": "20",
+          "info": "Кабинет английского языка",
+          "image": "20.jpg",
+          "style": {
+            "top": "585px",
+            "left": "530px"
+          },
+          "classes": [
+            "dop"
+          ],
+          "kind": "room"
+        },
+        {
+          "id": "CAB24",
+          "label": "24",
+          "info": "Кабинет общего профиля",
+          "image": "24.jpg",
+          "style": {
+            "top": "420px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB25",
+          "label": "25",
+          "info": "Кабинет английского языка",
+          "image": "25.jpg",
+          "style": {
+            "top": "370px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB26",
+          "label": "26",
+          "info": "Кабинет информатики",
+          "image": "26.jpg",
+          "style": {
+            "top": "310px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB27",
+          "label": "27",
+          "info": "Кабинет ИЗО",
+          "image": "27.jpg",
+          "style": {
+            "top": "255px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "COR2S",
+          "label": "К",
+          "info": "Коридор",
+          "image": "Коридор2.jpg",
+          "style": {
+            "top": "255px",
+            "left": "610px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB28",
+          "label": "28",
+          "info": "Кабинет русского языка",
+          "image": "28.jpg",
+          "style": {
+            "top": "180px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "RAZ",
+          "label": "Р",
+          "info": "Раздевалка",
+          "image": null,
+          "style": {
+            "top": "90px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "TMS",
+          "label": "М",
+          "info": "Мужской туалет",
+          "image": null,
+          "style": {
+            "top": "560px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "TGS",
+          "label": "Ж",
+          "info": "Женский туалет",
+          "image": null,
+          "style": {
+            "top": "487px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "LES",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛП.jpg",
+          "style": {
+            "top": "635px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "stair"
+        },
+        {
+          "id": "LWS",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛЛ.jpg",
+          "style": {
+            "top": "640px",
+            "left": "110px"
+          },
+          "classes": [],
+          "kind": "stair"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "L",
+          "style": {
+            "top": "70px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "LR",
+          "style": {
+            "top": "120px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "R",
+          "style": {
+            "top": "120px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "FT",
+          "style": {
+            "top": "120px",
+            "left": "575px"
+          }
+        },
+        {
+          "id": "FTV",
+          "style": {
+            "top": "120px",
+            "left": "85px"
+          }
+        },
+        {
+          "id": "K28",
+          "style": {
+            "top": "190px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K28N",
+          "style": {
+            "top": "190px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K27",
+          "style": {
+            "top": "265px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K27N",
+          "style": {
+            "top": "265px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K26",
+          "style": {
+            "top": "320px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K26N",
+          "style": {
+            "top": "320px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K25",
+          "style": {
+            "top": "380px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K25N",
+          "style": {
+            "top": "380px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K24",
+          "style": {
+            "top": "430px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K24N",
+          "style": {
+            "top": "430px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "TD",
+          "style": {
+            "top": "497px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "TDN",
+          "style": {
+            "top": "497px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "TM",
+          "style": {
+            "top": "570px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "TMN",
+          "style": {
+            "top": "570px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "L2",
+          "style": {
+            "top": "645px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "L2N",
+          "style": {
+            "top": "645px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K23",
+          "style": {
+            "top": "695px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K20",
+          "style": {
+            "top": "600px",
+            "left": "515px"
+          }
+        },
+        {
+          "id": "UC",
+          "style": {
+            "top": "600px",
+            "left": "480px"
+          }
+        },
+        {
+          "id": "U",
+          "style": {
+            "top": "645px",
+            "left": "480px"
+          }
+        },
+        {
+          "id": "K22",
+          "style": {
+            "top": "690px",
+            "left": "480px"
+          }
+        },
+        {
+          "id": "K21B",
+          "style": {
+            "top": "620px",
+            "left": "410px"
+          }
+        },
+        {
+          "id": "LB",
+          "style": {
+            "top": "645px",
+            "left": "410px"
+          }
+        },
+        {
+          "id": "LAB",
+          "style": {
+            "top": "690px",
+            "left": "410px"
+          }
+        },
+        {
+          "id": "K21A",
+          "style": {
+            "top": "620px",
+            "left": "310px"
+          }
+        },
+        {
+          "id": "K21",
+          "style": {
+            "top": "645px",
+            "left": "310px"
+          }
+        },
+        {
+          "id": "K18",
+          "style": {
+            "top": "690px",
+            "left": "310px"
+          }
+        },
+        {
+          "id": "K19",
+          "style": {
+            "top": "620px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "L3",
+          "style": {
+            "top": "645px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "K17",
+          "style": {
+            "top": "690px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "L3N",
+          "style": {
+            "top": "645px",
+            "left": "180px"
+          }
+        }
+      ],
+      "graph": {
+        "L": [
+          "LR"
+        ],
+        "LR": [
+          "L",
+          "R",
+          "FT",
+          "K28"
+        ],
+        "R": [
+          "LR"
+        ],
+        "FT": [
+          "LR",
+          "FTV"
+        ],
+        "FTV": [
+          "FT"
+        ],
+        "K28": [
+          "LR",
+          "K28N",
+          "K27"
+        ],
+        "K28N": [
+          "K28"
+        ],
+        "K27": [
+          "K28",
+          "K27N",
+          "K26"
+        ],
+        "K27N": [
+          "K27"
+        ],
+        "K26": [
+          "K27",
+          "K26N",
+          "K25"
+        ],
+        "K26N": [
+          "K26"
+        ],
+        "K25": [
+          "K25N",
+          "K26",
+          "K24"
+        ],
+        "K25N": [
+          "K25"
+        ],
+        "K24": [
+          "K24N",
+          "K25",
+          "TD"
+        ],
+        "K24N": [
+          "K24"
+        ],
+        "TD": [
+          "K24",
+          "TDN",
+          "TM"
+        ],
+        "TDN": [
+          "TD"
+        ],
+        "TM": [
+          "TD",
+          "TMN",
+          "L2"
+        ],
+        "TMN": [
+          "TM"
+        ],
+        "L2": [
+          "TM",
+          "L2N",
+          "K23",
+          "U"
+        ],
+        "L2N": [
+          "L2"
+        ],
+        "K23": [
+          "L2"
+        ],
+        "K20": [
+          "UC"
+        ],
+        "UC": [
+          "K20",
+          "U"
+        ],
+        "U": [
+          "L2",
+          "UC",
+          "K22",
+          "LB"
+        ],
+        "K22": [
+          "U"
+        ],
+        "K21B": [
+          "LB"
+        ],
+        "LB": [
+          "K21B",
+          "U",
+          "LAB",
+          "K21"
+        ],
+        "LAB": [
+          "LB"
+        ],
+        "K21A": [
+          "K21"
+        ],
+        "K21": [
+          "K21A",
+          "LB",
+          "K18",
+          "L3"
+        ],
+        "K18": [
+          "K21"
+        ],
+        "L3": [
+          "K19",
+          "K21",
+          "K17",
+          "L3N"
+        ],
+        "K19": [
+          "L3"
+        ],
+        "K17": [
+          "L3"
+        ],
+        "L3N": [
+          "L3"
+        ]
+      },
+      "exitNodes": [
+        "L",
+        "L2N",
+        "L3N",
+        "FTV"
+      ],
+      "showAllPathsButtonStyle": {
+        "display": "none",
+        "position": "absolute",
+        "top": "400px",
+        "left": "200px",
+        "z-index": "10"
+      }
+    },
+    {
+      "index": 2,
+      "id": "floor3",
+      "label": "Этаж 3",
+      "floorButtonStyle": {
+        "top": "50px",
+        "left": "50px"
+      },
+      "backgroundImage": "floort.png",
+      "rooms": [
+        {
+          "id": "LNT",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛВ.jpg",
+          "style": {
+            "top": "25px",
+            "left": "610px"
+          },
+          "classes": [],
+          "kind": "stair"
+        },
+        {
+          "id": "CAB35",
+          "label": "35",
+          "info": "Кабинет химии",
+          "image": "35.jpg",
+          "style": {
+            "top": "580px",
+            "left": "190px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB33",
+          "label": "33",
+          "info": "Кабинет ОБЖ",
+          "image": "33 обж.jpg",
+          "style": {
+            "top": "705px",
+            "left": "190px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB38",
+          "label": "38",
+          "info": "Кабинет английского языка",
+          "image": "38 англ.jpg",
+          "style": {
+            "top": "585px",
+            "left": "525px"
+          },
+          "classes": [
+            "dop"
+          ],
+          "kind": "room"
+        },
+        {
+          "id": "CAB36",
+          "label": "36",
+          "info": "Кабинет информатики",
+          "image": "36 инфа.jpg",
+          "style": {
+            "top": "705px",
+            "left": "620px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "ACT",
+          "label": "А",
+          "info": "Актовый зал",
+          "image": "Актовый.jpg",
+          "style": {
+            "top": "650px",
+            "left": "515px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB40",
+          "label": "40",
+          "info": "Кабинет математики",
+          "image": "40н.jpg",
+          "style": {
+            "top": "395px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB39",
+          "label": "39",
+          "info": "Кабинет математики",
+          "image": "39н.jpg",
+          "style": {
+            "top": "470px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB41",
+          "label": "41",
+          "info": "Кабинет русского языка",
+          "image": "41н.jpg",
+          "style": {
+            "top": "320px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB42",
+          "label": "42",
+          "info": "Кабинет русского языка",
+          "image": "42н.jpg",
+          "style": {
+            "top": "240px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CORT",
+          "label": "К",
+          "info": "Коридор",
+          "image": "Коридор3.jpg",
+          "style": {
+            "top": "240px",
+            "left": "610px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB43",
+          "label": "43",
+          "info": "Кабинет географии",
+          "image": "43н.jpg",
+          "style": {
+            "top": "180px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "CAB44",
+          "label": "44",
+          "info": "Кабинет истории",
+          "image": "44н.jpg",
+          "style": {
+            "top": "80px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "LET",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛП.jpg",
+          "style": {
+            "top": "635px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "stair"
+        },
+        {
+          "id": "SP1T",
+          "label": "СП",
+          "info": "Служебное помещение",
+          "image": "сп3.1.jpg",
+          "style": {
+            "top": "525px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "SP2T",
+          "label": "СП",
+          "info": "Служебное помещение",
+          "image": "Сп3.jpg",
+          "style": {
+            "top": "565px",
+            "left": "710px"
+          },
+          "classes": [],
+          "kind": "room"
+        },
+        {
+          "id": "LWT",
+          "label": "Л",
+          "info": "Лестница",
+          "image": "ЛЛ.jpg",
+          "style": {
+            "top": "640px",
+            "left": "110px"
+          },
+          "classes": [],
+          "kind": "stair"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "L",
+          "style": {
+            "top": "70px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K44",
+          "style": {
+            "top": "90px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K44N",
+          "style": {
+            "top": "90px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K43",
+          "style": {
+            "top": "190px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K43N",
+          "style": {
+            "top": "190px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K42",
+          "style": {
+            "top": "260px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K42N",
+          "style": {
+            "top": "260px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K41",
+          "style": {
+            "top": "335px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K41N",
+          "style": {
+            "top": "335px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K40",
+          "style": {
+            "top": "405px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K40N",
+          "style": {
+            "top": "405px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K39",
+          "style": {
+            "top": "485px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "K39N",
+          "style": {
+            "top": "485px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "SP1",
+          "style": {
+            "top": "530px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "SP1N",
+          "style": {
+            "top": "530px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "SP2",
+          "style": {
+            "top": "590px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "SP2N",
+          "style": {
+            "top": "590px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K38",
+          "style": {
+            "top": "590px",
+            "left": "575px"
+          }
+        },
+        {
+          "id": "L2",
+          "style": {
+            "top": "650px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "L2N",
+          "style": {
+            "top": "650px",
+            "left": "695px"
+          }
+        },
+        {
+          "id": "K36",
+          "style": {
+            "top": "690px",
+            "left": "645px"
+          }
+        },
+        {
+          "id": "L3",
+          "style": {
+            "top": "650px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "K35",
+          "style": {
+            "top": "620px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "K33",
+          "style": {
+            "top": "690px",
+            "left": "220px"
+          }
+        },
+        {
+          "id": "L3N",
+          "style": {
+            "top": "650px",
+            "left": "180px"
+          }
+        },
+        {
+          "id": "ACT",
+          "style": {
+            "top": "650px",
+            "left": "575px"
+          }
+        }
+      ],
+      "graph": {
+        "L": [
+          "K44"
+        ],
+        "K44": [
+          "L",
+          "K44N",
+          "K43"
+        ],
+        "K44N": [
+          "K44"
+        ],
+        "K43": [
+          "K44",
+          "K43N",
+          "K42"
+        ],
+        "K43N": [
+          "K43"
+        ],
+        "K42": [
+          "K43",
+          "K42N",
+          "K41"
+        ],
+        "K42N": [
+          "K42"
+        ],
+        "K41": [
+          "K42",
+          "K41N",
+          "K40"
+        ],
+        "K41N": [
+          "K41"
+        ],
+        "K40": [
+          "K41",
+          "K40N",
+          "K39"
+        ],
+        "K40N": [
+          "K40"
+        ],
+        "K39": [
+          "K40",
+          "K39N",
+          "SP1"
+        ],
+        "K39N": [
+          "K39"
+        ],
+        "SP1": [
+          "SP1N",
+          "K39",
+          "SP2"
+        ],
+        "SP1N": [
+          "SP1"
+        ],
+        "SP2": [
+          "SP1",
+          "SP2N",
+          "K38",
+          "L2"
+        ],
+        "K38": [
+          "SP2"
+        ],
+        "SP2N": [
+          "SP2"
+        ],
+        "L2": [
+          "SP2",
+          "L2N",
+          "K36",
+          "ACT"
+        ],
+        "L2N": [
+          "L2"
+        ],
+        "K36": [
+          "L2"
+        ],
+        "L3": [
+          "K35",
+          "K33",
+          "L3N"
+        ],
+        "K35": [
+          "L3"
+        ],
+        "K33": [
+          "L3"
+        ],
+        "L3N": [
+          "L3"
+        ],
+        "ACT": [
+          "L2"
+        ]
+      },
+      "exitNodes": [
+        "L",
+        "L3N",
+        "L2N"
+      ],
+      "showAllPathsButtonStyle": {
+        "display": "none",
+        "position": "absolute",
+        "top": "400px",
+        "left": "200px",
+        "z-index": "10"
+      }
+    }
+  ],
+  "connectors": [
+    {
+      "id": "stair-north",
+      "type": "stairs",
+      "label": "Лестница (север)",
+      "nodesByFloor": {
+        "0": "L",
+        "1": "L",
+        "2": "L"
+      }
+    },
+    {
+      "id": "stair-east",
+      "type": "stairs",
+      "label": "Лестница (восток)",
+      "nodesByFloor": {
+        "0": "L2N",
+        "1": "L2N",
+        "2": "L2N"
+      }
+    },
+    {
+      "id": "stair-west",
+      "type": "stairs",
+      "label": "Лестница (запад)",
+      "nodesByFloor": {
+        "0": "L3N",
+        "1": "L3N",
+        "2": "L3N"
+      }
+    }
+  ],
+  "evacuation": {
+    "finalExitRoomKinds": [
+      "foyer",
+      "exit"
+    ],
+    "finalExitRoomIds": [
+      "EXF",
+      "FOYE",
+      "fzk"
+    ]
+  },
+  "notes": [
+    "2026-01-11: floor3 removed ACT cross-wing edges; ACT node removed.",
+    "2026-01-11: Восстановлен узел ACT (актовый зал) на 3 этаже, связь только с L2; переход к левому крылу не добавляется."
+  ]
+}
